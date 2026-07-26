@@ -2,7 +2,7 @@
  const {POManager} = require('../pageObjects/POManager');
 
 
- test.only('Client App login', async ({page})=>
+ test('Client App login', async ({page})=>
  {
    const poManager = new POManager(page);
     //js file- Login js, DashboardPage
@@ -28,25 +28,7 @@
    await dashboardPage.navigateToOrders();
    const ordersHistoryPage = poManager.getOrdersHistoryPage();
    await ordersHistoryPage.searchOrderAndSelect(orderId);
-   expect(orderId.includes(await ordersHistoryPage.getOrderId())).toBeTruthy();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-    
+   expect(orderId.includes(await ordersHistoryPage.getOrderId())).toBeTruthy();   
 
 
     //Zara Coat 4

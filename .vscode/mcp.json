@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@0.0.78"
+      ],
+      "cwd": "${workspaceFolder}",
+      "type": "stdio"
+    }
+  }
+}

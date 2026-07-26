@@ -7,7 +7,7 @@ console.log("Playwright config loaded");
  */
 
 const config =({
-  testDir: './Plawright Practice',
+  testDir: './tests',
   timeout : 20* 1000,
   expect: {
     timeout: 5000
